@@ -1,7 +1,12 @@
+import { useMessageContext } from "../context/MessageContextProvider";
+
 const Sidebar = () => {
+  const { toggle } = useMessageContext();
+
   return (
-    <div className="sidebar">
-    </div>
+      <div className={`sidebar ${toggle ? "show" : ""}`}>
+      
+      </div>
   );
 };
 
