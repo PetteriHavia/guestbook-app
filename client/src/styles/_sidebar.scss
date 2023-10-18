@@ -1,5 +1,18 @@
 .sidebar{
-    flex-basis: 25%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 400px;
     background-color: rgb(34, 88, 238);
-    position: sticky;
+    position: fixed;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: .3s ease;
+    opacity: 0;
+    padding: 3rem 2rem;
+}
+
+.sidebar.show{
+    transform: translateX(0%);
+    opacity: 1;
 }
