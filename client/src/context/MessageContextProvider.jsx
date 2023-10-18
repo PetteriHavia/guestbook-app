@@ -4,9 +4,10 @@ const MessageContext = createContext();
 
 export const MessageContextProvider = ({ children }) => {
   const [messages, setMessages] = useState(null);
+  const [toggle, setToggle] = useState(false);
 
   return (
-    <MessageContext.Provider value={{messages, setMessages}}>
+    <MessageContext.Provider value={{messages, setMessages, toggle, setToggle}}>
       {children}
     </MessageContext.Provider>
   );
