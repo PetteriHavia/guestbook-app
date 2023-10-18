@@ -1,0 +1,29 @@
+:root{
+    --blue: #4090EE;
+    --white: #fff;
+    --gray-text: #424242;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.app-container{
+    display: flex;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+@import "./card";
+@import "./sidebar";
+@import "./main";
+@import "./header";

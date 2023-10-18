@@ -1,0 +1,18 @@
+.main{
+    display: flex;
+    justify-content: center;
+    flex-basis: 70%;
+    padding: 2rem 2rem;
+}
+
+.main-inner{
+    max-width: 950px;
+    width: 100%;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
