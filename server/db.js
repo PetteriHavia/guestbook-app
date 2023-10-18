@@ -16,26 +16,3 @@ module.exports = {
     },
     getDb: () => dbConnection
 }
-
-/*
-const uri = "mongodb://localhost:27017/Guestbook";
-const client = MongoClient.connect(uri);
-
-async function connectToDb() {
-    try {
-        await client.connect();
-        console.log("Connected to MongoDB");
-    } catch{
-        console.log("Error connecting to MongoDB", error);
-    }
-}
-
-function getDatabaseClient() {
-    return client;
-}
-
-
-module.exports = {
-    connectToDb,
-    getDatabaseClient,
-};*/

@@ -1,9 +1,13 @@
 const express = require("express");
 const { connectToDb, getDb } = require("./db");
 const { ObjectId } = require("mongodb");
+const cors = require("cors");
 
 const app = express();
 app.use(express.json());
+
+//cors
+app.use(cors());
 
 //db connection
 let db;
@@ -22,7 +26,7 @@ app.get("/messages", (req, res) => {
 
   //current page
   const page = req.query.page || 0
-  const messagesPerPage = 2
+  const messagesPerPage = 6
 
   let messages = [];
 
